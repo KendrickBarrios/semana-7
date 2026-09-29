@@ -1,0 +1,24 @@
+info:
+  name: Guardar proveedores
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/api/proveedores
+  body:
+    type: json
+    data: |-
+      {
+          "nombre": "HP",
+          "telefono": "81000000",
+          "correo": "hp@hp-mail.com",
+          "activo": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

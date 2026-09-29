@@ -29,6 +29,7 @@ public class Producto {
     @Column(name = "precio_venta")
     private BigDecimal precioVenta;
 
+    @Column(name = "existencia")
     private int existencia;
 
     public Integer getId() {
@@ -61,6 +62,22 @@ public class Producto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public Proveedor getProveedor() {
+        return proveedor;
+    }
+
+    public void setProveedor(Proveedor proveedor) {
+        this.proveedor = proveedor;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public BigDecimal getPrecioVenta() {

@@ -10,12 +10,15 @@ http:
     type: json
     data: |-
       {
-          "codigo": "LAP-001",
-          "nombre": "Laptop Lenovo",
+          "codigo": "LCD-001",
+          "nombre": "Monitor HP",
           "categoria": {
-              "id": 2
+              "id": 3
           },
-          "precioVenta": 850.00,
+          "proveedor": {
+              "id": 1
+          },
+          "precioVenta": 450.00,
           "existencia": 10
       }
   auth: inherit
