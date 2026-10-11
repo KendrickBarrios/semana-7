@@ -2,6 +2,8 @@ package ni.edu.uam.gestion_productos.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "categoria")
 public class Categoria {
@@ -11,6 +13,9 @@ public class Categoria {
     private Integer id;
 
     private String nombreCategoria;
+
+    @OneToMany(mappedBy = "categoria")
+    private List<Producto> productos;
 
     private Boolean activa;
 
